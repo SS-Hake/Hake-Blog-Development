@@ -1,0 +1,17 @@
+<div class="projects-lockup">
+	<h2 class="news-title">Recent Projects</h2>
+
+	<!-- projects loop -->
+	<div class="project-loop">
+		{% for project in site.data.settings.projects  limit:3 %}
+			<div class="project-details">
+				<a class="project-title" href="{{ project.url }}">{{ project.title }}</a>
+				<h5 class="project-date">{{project.date}}</h5>
+				<p class="project-blurb">
+					{{project.blurb}}
+				</p>
+			</div>
+		{% endfor %}
+	</div>
+	<a href="/project-list">All Projects</a>
+</div>

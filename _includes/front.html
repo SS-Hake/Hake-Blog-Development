@@ -3,11 +3,27 @@
 		 <div class="logo"> {% include icons/logo.html %} </div>
 	</div>
 	<div class="ui-container">
-		<div class="card square emerald">Projects</div>
-		<div class="square river">
-		<div class="front">Blog</div>
-		<div class="back"><a href="/#/">Sup</a> Stuff</div>
+		<div class="card square emerald">
+			<div class="front">
+				<div class="front-text">
+					<div class="title">Projects</div>
+					<div class="blurb">A collection of web design and HTML 5 canvas projects.</div>
+				</div>
+			</div>
+			<div class="back">
+				{% include emerald-back.html %}
+			</div>
+
 		</div>
+
+		<div class="square river">
+			<div class="front">Blog</div>
+			<div class="back">
+				{% include river-back.html %}
+
+			</div>
+		</div>
+
 		<div class="square carrot">About</div>
 		<div class="square alizarin">Contact</div>
 	</div>

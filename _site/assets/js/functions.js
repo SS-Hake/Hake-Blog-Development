@@ -7,10 +7,12 @@ $( document ).ready(function() {
   	speed: 1000
   });
 
-  $('#card-1').flip({
+  $('.emerald').flip({
   	axis: "y", // y or x
     reverse: false, // true and false
     trigger: "hover", // click or hover
     speed: 1000
-  })
+  });
+
+
 });
